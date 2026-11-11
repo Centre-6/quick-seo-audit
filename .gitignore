@@ -1,0 +1,29 @@
+# The prospect ledger holds the domains you have audited, the verdicts you
+# reached and the notes you wrote about them. It is private business data and
+# must never be committed.
+runs/
+*.db
+*.sqlite
+*.sqlite3
+
+# Audit output. Raw HTML captures, inventories and reports for real sites.
+research/
+out/
+*-audit/
+inventory.json
+inventory.csv
+findings.json
+keyword-report.*
+local-*.json
+local-signals.md
+page__*.html
+*.docx
+
+# Credentials, in case anyone keeps a local copy next to the tool.
+.env
+*.key
+secrets/
+
+__pycache__/
+*.py[cod]
+.DS_Store
